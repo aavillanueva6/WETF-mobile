@@ -1,15 +1,13 @@
 import { useState } from 'react';
 import { View, StyleSheet, Button } from 'react-native';
-import { useAudioPlayer } from 'expo-audio';
+import { AudioPlayer, useAudioPlayer } from 'expo-audio';
 
-const audioSource =
+const audioSource: string =
   'https://ssl-proxy.icastcenter.com/get.php?type=Icecast&server=199.180.72.2&port=9007&mount=/stream&data=mp3';
 
 export default function App() {
-  const player = useAudioPlayer(audioSource);
-  const [buttonText, setButtonText] = useState('Play Live Stream');
-
-  console.log(player.currentStatus);
+  const player: AudioPlayer = useAudioPlayer(audioSource);
+  const [buttonText, setButtonText] = useState<string>('Play Live Stream');
 
   return (
     <View style={styles.container}>
