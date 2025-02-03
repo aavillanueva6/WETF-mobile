@@ -35,8 +35,26 @@ export default function Schedule() {
   });
 
   const queryResults = data?.schedule || [];
+  let orderedResults = [...queryResults];
+  orderedResults.sort((a, b) => {
+    return a.startTime24 - b.startTime24;
+  });
+  let pairedResults = [];
+  for (
+    let i = 0, j = Math.floor(orderedResults.length / 2);
+    j < orderedResults.length;
+    i++, j++
+  ) {
+    if (i === Math.floor(orderedResults.length / 2)) {
+      //@ts-ignore
+      pairedResults.push([{}, orderedResults[j]]);
+    } else {
+      pairedResults.push([orderedResults[i], orderedResults[j]]);
+    }
+  }
+  console.log(pairedResults);
 
-  let results = JSON.stringify(queryResults);
+  let results = JSON.stringify(pairedResults);
   return <Text style={styles.text}>schedule query results: {results}</Text>;
 }
 
