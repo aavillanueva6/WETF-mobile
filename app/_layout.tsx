@@ -1,5 +1,15 @@
-import { Stack } from "expo-router";
+import { Stack } from 'expo-router';
+import { ThemeProvider } from '@/context/ThemeContext';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 export default function RootLayout() {
-  return <Stack />;
+  return (
+    <ThemeProvider>
+      <SafeAreaProvider>
+        <Stack screenOptions={{ headerShown: false }}>
+          <Stack.Screen name='index' />
+        </Stack>
+      </SafeAreaProvider>
+    </ThemeProvider>
+  );
 }
