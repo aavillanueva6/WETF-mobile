@@ -1,8 +1,10 @@
 import { useState, useContext } from 'react';
-import { View, StyleSheet, Pressable, Text } from 'react-native';
+import { View, StyleSheet, Pressable, Text, Image } from 'react-native';
 import { Audio } from 'expo-av';
 import { ThemeContext } from '@/context/ThemeContext';
 import { Octicons } from '@expo/vector-icons';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { StatusBar } from 'expo-status-bar';
 
 interface ThemeType {
   text: string;
@@ -75,34 +77,43 @@ export default function App() {
   const styles = createStyles(theme, colorScheme);
 
   return (
-    <View style={styles.container}>
-      <Pressable
-        onPress={() =>
-          setColorScheme(colorScheme === 'light' ? 'dark' : 'light')
-        }
-        style={{ marginLeft: 10 }}
-      >
-        <Octicons
-          name={colorScheme === 'dark' ? 'moon' : 'sun'}
-          size={36}
-          color={theme.text}
-          selectable={undefined}
-          style={{ width: 36 }}
-        />
-      </Pressable>
-      <Pressable
-        onPress={() => {
-          handleButtonClick();
-        }}
-        style={() => [
-          styles.audioButton,
-          buttonDisabled && styles.disabledButton,
-        ]}
-        disabled={buttonDisabled}
-      >
-        <Text style={styles.audioButtonText}>{buttonText}</Text>
-      </Pressable>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <View style={styles.buttonContainer}>
+        <View style={styles.streamAndLogoContainer}>
+          <Pressable
+            onPress={() => {
+              handleButtonClick();
+            }}
+            style={() => [
+              styles.audioButton,
+              buttonDisabled && styles.disabledButton,
+            ]}
+            disabled={buttonDisabled}
+          >
+            <Text style={styles.audioButtonText}>{buttonText}</Text>
+          </Pressable>
+          <Image
+            style={styles.smallLogo}
+            source={require('@/assets/images/WETFLogo.png')}
+          ></Image>
+        </View>
+        <Pressable
+          onPress={() =>
+            setColorScheme(colorScheme === 'light' ? 'dark' : 'light')
+          }
+          style={{ marginLeft: 10 }}
+        >
+          <Octicons
+            name={colorScheme === 'dark' ? 'moon' : 'sun'}
+            size={36}
+            color={theme.text}
+            selectable={undefined}
+            style={{ width: 36 }}
+          />
+        </Pressable>
+      </View>
+      <StatusBar style={colorScheme === 'dark' ? 'light' : 'dark'} />
+    </SafeAreaView>
   );
 }
 
@@ -110,10 +121,22 @@ function createStyles(theme: ThemeType, colorScheme: string) {
   return StyleSheet.create({
     container: {
       flex: 1,
-      justifyContent: 'center',
       backgroundColor: theme.background,
       padding: 10,
     },
+    buttonContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginBottom: 10,
+      padding: 10,
+      width: '100%',
+      maxWidth: 1024,
+      marginHorizontal: 'auto',
+      pointerEvents: 'auto',
+      justifyContent: 'space-between',
+    },
+    streamAndLogoContainer: { flexDirection: 'row' },
+    smallLogo: { width: 40, height: 40, marginLeft: 10 },
     audioButton: {
       backgroundColor: theme.button,
       borderRadius: 5,
