@@ -5,6 +5,8 @@ import { ThemeContext } from '@/context/ThemeContext';
 import { Octicons } from '@expo/vector-icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
+import Schedule from '@/components/Schedule';
+import { Providers } from '@/components/Providers';
 
 interface ThemeType {
   text: string;
@@ -112,6 +114,9 @@ export default function App() {
           />
         </Pressable>
       </View>
+      <Providers>
+        <Schedule />
+      </Providers>
       <StatusBar style={colorScheme === 'dark' ? 'light' : 'dark'} />
     </SafeAreaView>
   );
