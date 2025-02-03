@@ -50,6 +50,8 @@ export default function App() {
     setButtonDisabled(true);
     setButtonText('Stream Loading');
 
+    await Audio.setAudioModeAsync({ playsInSilentModeIOS: true });
+
     const { sound } = await Audio.Sound.createAsync(avSource);
     setSound(sound);
 
