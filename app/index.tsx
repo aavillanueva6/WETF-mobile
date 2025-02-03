@@ -9,6 +9,7 @@ interface ThemeType {
   background: string;
   icon: string;
   button: string;
+  disabledButton: string;
   primary: string;
   secondary: string;
   tertiary: string;
@@ -66,6 +67,7 @@ export default function App() {
     //@ts-ignore
     await sound.pauseAsync();
     setButtonText('Play Live Stream');
+    setAudioPlayingStatus(false);
 
     // console.log('stopping Playback');
   }
@@ -92,7 +94,10 @@ export default function App() {
         onPress={() => {
           handleButtonClick();
         }}
-        style={styles.audioButton}
+        style={() => [
+          styles.audioButton,
+          buttonDisabled && styles.disabledButton,
+        ]}
         disabled={buttonDisabled}
       >
         <Text style={styles.audioButtonText}>{buttonText}</Text>
@@ -118,6 +123,9 @@ function createStyles(theme: ThemeType, colorScheme: string) {
       fontSize: 18,
       color: theme.primary,
       fontWeight: 'bold',
+    },
+    disabledButton: {
+      opacity: 0.5,
     },
   });
 }
