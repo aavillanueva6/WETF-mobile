@@ -94,9 +94,19 @@ export default function Schedule() {
                 SetDisplayDay(day);
               }}
               key={day}
-              style={styles.dayButton}
+              style={[
+                styles.dayButton,
+                day === displayDay && styles.selectedDayButton,
+              ]}
             >
-              <Text style={styles.buttonText}>{day}</Text>
+              <Text
+                style={[
+                  styles.buttonText,
+                  day === displayDay && styles.selectedButtonText,
+                ]}
+              >
+                {day}
+              </Text>
             </Pressable>
           );
         })}
@@ -180,6 +190,12 @@ function createStyles(theme: any, colorScheme: string) {
       flexDirection: 'row',
       flexWrap: 'wrap',
       justifyContent: 'center',
+    },
+    selectedDayButton: {
+      backgroundColor: theme.primary,
+    },
+    selectedButtonText: {
+      color: theme.button,
     },
   });
 }
