@@ -1,6 +1,6 @@
 import { useState, useContext } from 'react';
 import { View, StyleSheet, Pressable, Text, Image } from 'react-native';
-import { Audio } from 'expo-av';
+import { Audio, InterruptionModeAndroid, InterruptionModeIOS } from 'expo-av';
 import { ThemeContext } from '@/context/ThemeContext';
 import { Octicons } from '@expo/vector-icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -50,7 +50,14 @@ export default function App() {
     setButtonDisabled(true);
     setButtonText('Stream Loading');
 
-    await Audio.setAudioModeAsync({ playsInSilentModeIOS: true });
+    await Audio.setAudioModeAsync({
+      playsInSilentModeIOS: true,
+      staysActiveInBackground: true,
+      interruptionModeIOS: InterruptionModeIOS.DuckOthers,
+      interruptionModeAndroid: InterruptionModeAndroid.DuckOthers,
+      shouldDuckAndroid: true,
+      playThroughEarpieceAndroid: true,
+    });
 
     const { sound } = await Audio.Sound.createAsync(avSource);
     setSound(sound);
