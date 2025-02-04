@@ -1,4 +1,4 @@
-import { Text, StyleSheet, View, ScrollView } from 'react-native';
+import { Text, StyleSheet, View, ScrollView, Pressable } from 'react-native';
 import { ThemeContext } from '@/context/ThemeContext';
 import { useContext, useState } from 'react';
 import scheduleData from '@/data/schedule.json';
@@ -38,8 +38,7 @@ const daysOfWeek: string[] = [
 ];
 
 export default function Schedule() {
-  // const [displayDay, SetDisplayDay] = useState(`${daysOfWeek[date.getDay()]}`);
-  const [displayDay, SetDisplayDay] = useState(`Sunday`);
+  const [displayDay, SetDisplayDay] = useState(`${daysOfWeek[date.getDay()]}`);
 
   //@ts-ignore
   const { colorScheme, theme } = useContext(ThemeContext);
@@ -86,7 +85,22 @@ export default function Schedule() {
   }
 
   return (
-    <ScrollView style={styles.container}>
+    <View style={styles.container}>
+      <View style={styles.buttonsContainer}>
+        {daysOfWeek.map((day) => {
+          return (
+            <Pressable
+              onPress={() => {
+                SetDisplayDay(day);
+              }}
+              key={day}
+              style={styles.dayButton}
+            >
+              <Text style={styles.buttonText}>{day}</Text>
+            </Pressable>
+          );
+        })}
+      </View>
       <Text style={[styles.centeredText, styles.text, styles.dayOfWeekText]}>
         {displayDay}
       </Text>
@@ -94,26 +108,28 @@ export default function Schedule() {
         All show times listed in Eastern time zone (EST/EDT)
       </Text>
 
-      <View>
-        {pairedResults.map((shows, i) => {
-          return (
-            <View style={styles.scheduleRow} key={i}>
-              <View style={styles.scheduleColumn}>
-                {shows[0].show ? (
-                  <ScheduleShowCard show={shows[0]} />
-                ) : (
-                  <Text></Text>
-                )}
+      <ScrollView style={styles.container}>
+        <View>
+          {pairedResults.map((shows, i) => {
+            return (
+              <View style={styles.scheduleRow} key={i}>
+                <View style={styles.scheduleColumn}>
+                  {shows[0].show ? (
+                    <ScheduleShowCard show={shows[0]} />
+                  ) : (
+                    <Text></Text>
+                  )}
+                </View>
+                <View style={styles.verticalLine} />
+                <View style={styles.scheduleColumn}>
+                  <ScheduleShowCard show={shows[1]} />
+                </View>
               </View>
-              <View style={styles.verticalLine} />
-              <View style={styles.scheduleColumn}>
-                <ScheduleShowCard show={shows[1]} />
-              </View>
-            </View>
-          );
-        })}
-      </View>
-    </ScrollView>
+            );
+          })}
+        </View>
+      </ScrollView>
+    </View>
   );
 }
 
@@ -148,6 +164,22 @@ function createStyles(theme: any, colorScheme: string) {
     },
     timezoneText: {
       fontStyle: 'italic',
+      marginBottom: 10,
+    },
+    dayButton: {
+      backgroundColor: theme.button,
+      borderRadius: 5,
+      padding: 10,
+      margin: 5,
+    },
+    buttonText: {
+      color: theme.primary,
+      fontWeight: 'bold',
+    },
+    buttonsContainer: {
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      justifyContent: 'center',
     },
   });
 }
