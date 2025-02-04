@@ -1,8 +1,10 @@
+import { Stack } from 'expo-router';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 import { useContext } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { ThemeContext } from '@/context/ThemeContext';
-import { StatusBar } from 'expo-status-bar';
-import Schedule from '@/components/Schedule';
 
 interface ThemeType {
   text: string;
@@ -16,25 +18,29 @@ interface ThemeType {
   tertiary70: string;
 }
 
-export default function App() {
+export default function AppContainer() {
   //@ts-ignore
   const { colorScheme, setColorScheme, theme } = useContext(ThemeContext);
   const styles = createStyles(theme, colorScheme);
 
   return (
-    <View style={styles.container}>
-      <Schedule />
-      <StatusBar style={colorScheme === 'dark' ? 'light' : 'dark'} />
-    </View>
+    <SafeAreaProvider>
+      <SafeAreaView style={styles.appSafeAreaView}>
+        <Header />
+        <Stack screenOptions={{ headerShown: false }}>
+          <Stack.Screen name='index' />
+        </Stack>
+        <Footer />
+      </SafeAreaView>
+    </SafeAreaProvider>
   );
 }
 
 function createStyles(theme: ThemeType, colorScheme: string) {
   return StyleSheet.create({
-    container: {
-      flex: 1,
+    appSafeAreaView: {
       backgroundColor: theme.background,
-      marginTop: -1,
+      flex: 1,
     },
   });
 }
