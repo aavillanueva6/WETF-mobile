@@ -3,7 +3,7 @@ import React, { useState, useContext } from 'react';
 import { Audio, InterruptionModeAndroid, InterruptionModeIOS } from 'expo-av';
 import { ThemeContext } from '@/context/ThemeContext';
 import { Octicons } from '@expo/vector-icons';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { useRouter } from 'expo-router';
 
 interface ThemeType {
   text: string;
@@ -81,6 +81,10 @@ export default function Header() {
 
     // console.log('stopping Playback');
   }
+  const router = useRouter();
+  const handleLogoClick = () => {
+    router.push('/');
+  };
 
   const styles = createStyles(theme, colorScheme);
   return (
@@ -88,9 +92,7 @@ export default function Header() {
       <View style={styles.buttonContainer}>
         <View style={styles.streamAndLogoContainer}>
           <Pressable
-            onPress={() => {
-              handleButtonClick();
-            }}
+            onPress={() => handleButtonClick()}
             style={() => [
               styles.audioButton,
               buttonDisabled && styles.disabledButton,
@@ -99,10 +101,12 @@ export default function Header() {
           >
             <Text style={styles.audioButtonText}>{buttonText}</Text>
           </Pressable>
-          <Image
-            style={styles.smallLogo}
-            source={require('@/assets/images/WETFLogo.png')}
-          ></Image>
+          <Pressable onPress={() => handleLogoClick()}>
+            <Image
+              style={styles.smallLogo}
+              source={require('@/assets/images/WETFLogo.png')}
+            ></Image>
+          </Pressable>
         </View>
         <Pressable
           onPress={() =>
@@ -139,8 +143,15 @@ function createStyles(theme: ThemeType, colorScheme: string) {
       pointerEvents: 'auto',
       justifyContent: 'space-between',
     },
-    streamAndLogoContainer: { flexDirection: 'row' },
-    smallLogo: { width: 40, height: 40, marginLeft: 10 },
+    streamAndLogoContainer: {
+      flexDirection: 'row',
+    },
+    smallLogo: {
+      width: 40,
+      height: 40,
+      marginLeft: 10,
+      alignSelf: 'center',
+    },
     audioButton: {
       backgroundColor: theme.button,
       borderRadius: 5,

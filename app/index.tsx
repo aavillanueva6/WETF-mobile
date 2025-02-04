@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { ThemeContext } from '@/context/ThemeContext';
 import { StatusBar } from 'expo-status-bar';
-import Schedule from '@/components/Schedule';
+import About from '@/components/About';
 
 interface ThemeType {
   text: string;
@@ -16,14 +16,14 @@ interface ThemeType {
   tertiary70: string;
 }
 
-export default function App() {
+export default function Home() {
   //@ts-ignore
-  const { colorScheme, setColorScheme, theme } = useContext(ThemeContext);
+  const { colorScheme, theme } = useContext(ThemeContext);
   const styles = createStyles(theme, colorScheme);
 
   return (
     <View style={styles.container}>
-      <Schedule />
+      <About />
       <StatusBar style={colorScheme === 'dark' ? 'light' : 'dark'} />
     </View>
   );

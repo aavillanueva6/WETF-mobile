@@ -20,7 +20,7 @@ interface ThemeType {
 
 export default function AppContainer() {
   //@ts-ignore
-  const { colorScheme, setColorScheme, theme } = useContext(ThemeContext);
+  const { colorScheme, theme } = useContext(ThemeContext);
   const styles = createStyles(theme, colorScheme);
 
   return (
@@ -29,6 +29,7 @@ export default function AppContainer() {
         <Header />
         <Stack screenOptions={{ headerShown: false }}>
           <Stack.Screen name='index' />
+          <Stack.Screen name='schedule' />
         </Stack>
         <Footer />
       </SafeAreaView>
