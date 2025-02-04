@@ -123,9 +123,9 @@ export default function App() {
           />
         </Pressable>
       </View>
-      <Providers>
-        <Schedule />
-      </Providers>
+      {/* <Providers> */}
+      <Schedule />
+      {/* </Providers> */}
       <StatusBar style={colorScheme === 'dark' ? 'light' : 'dark'} />
     </SafeAreaView>
   );
