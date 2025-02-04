@@ -1,0 +1,2806 @@
+{
+  "Sunday": [
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Sunday",
+      "show": {
+        "__typename": "Show",
+        "name": "Collector's Choice",
+        "url": "collectors-choice",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "The Phantom of the Bopera",
+            "fullName": "Mike Finnerty",
+            "url": "mike-finnerty"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Brent Banulis",
+            "url": "brent-banulis"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Rob Hoff",
+            "url": "rob-hoff"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Lori Williams",
+            "url": "lori-williams"
+          }
+        ]
+      },
+      "startTime24": 0,
+      "startTime12": "12:00 AM",
+      "endTime12": "3:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Sunday",
+      "show": {
+        "__typename": "Show",
+        "name": "This is Jazz",
+        "url": "this-is-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dave Schwan",
+            "url": "dave-schwan"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Hill",
+            "url": "john-hill"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dee Alexander",
+            "url": "dee-alexander"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jana Lee Ross",
+            "url": "jana-lee-ross"
+          }
+        ]
+      },
+      "startTime24": 3,
+      "startTime12": "3:00 AM",
+      "endTime12": "7:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Sunday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jazz and More",
+        "url": "jazz-and-more",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jake Longwell",
+            "url": "jake-longwell"
+          }
+        ]
+      },
+      "startTime24": 7,
+      "startTime12": "7:00 AM",
+      "endTime12": "10:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Sunday",
+      "show": {
+        "__typename": "Show",
+        "name": "Happy Birthday Dear Jazz Artist",
+        "url": "happy-birthday-dear-jazz-artist",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Laurie Villanueva",
+            "url": "laurie-villanueva"
+          }
+        ]
+      },
+      "startTime24": 10,
+      "startTime12": "10:00 AM",
+      "endTime12": "11:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Sunday",
+      "show": {
+        "__typename": "Show",
+        "name": "This is Jazz",
+        "url": "this-is-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dave Schwan",
+            "url": "dave-schwan"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Hill",
+            "url": "john-hill"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dee Alexander",
+            "url": "dee-alexander"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jana Lee Ross",
+            "url": "jana-lee-ross"
+          }
+        ]
+      },
+      "startTime24": 10,
+      "startTime12": "10:00 AM",
+      "endTime12": "11:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Sunday",
+      "show": {
+        "__typename": "Show",
+        "name": "Touch of Classics",
+        "url": "touch-of-classics",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jane Fischer",
+            "url": "jane-fischer"
+          }
+        ]
+      },
+      "startTime24": 11,
+      "startTime12": "11:00 AM",
+      "endTime12": "1:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Sunday",
+      "show": {
+        "__typename": "Show",
+        "name": "This is Jazz",
+        "url": "this-is-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dave Schwan",
+            "url": "dave-schwan"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Hill",
+            "url": "john-hill"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dee Alexander",
+            "url": "dee-alexander"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jana Lee Ross",
+            "url": "jana-lee-ross"
+          }
+        ]
+      },
+      "startTime24": 13,
+      "startTime12": "1:00 PM",
+      "endTime12": "4:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Sunday",
+      "show": {
+        "__typename": "Show",
+        "name": "New Vintage",
+        "url": "new-vintage",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Bill O'Connell",
+            "url": "bill-oconnell"
+          }
+        ]
+      },
+      "startTime24": 16,
+      "startTime12": "4:00 PM",
+      "endTime12": "5:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Sunday",
+      "show": {
+        "__typename": "Show",
+        "name": "Collector's Choice",
+        "url": "collectors-choice",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "The Phantom of the Bopera",
+            "fullName": "Mike Finnerty",
+            "url": "mike-finnerty"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Brent Banulis",
+            "url": "brent-banulis"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Rob Hoff",
+            "url": "rob-hoff"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Lori Williams",
+            "url": "lori-williams"
+          }
+        ]
+      },
+      "startTime24": 17,
+      "startTime12": "5:00 PM",
+      "endTime12": "6:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Sunday",
+      "show": {
+        "__typename": "Show",
+        "name": "Collector's Choice",
+        "url": "collectors-choice",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "The Phantom of the Bopera",
+            "fullName": "Mike Finnerty",
+            "url": "mike-finnerty"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Brent Banulis",
+            "url": "brent-banulis"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Rob Hoff",
+            "url": "rob-hoff"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Lori Williams",
+            "url": "lori-williams"
+          }
+        ]
+      },
+      "startTime24": 18,
+      "startTime12": "6:00 PM",
+      "endTime12": "7:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Sunday",
+      "show": {
+        "__typename": "Show",
+        "name": "Collector's Choice",
+        "url": "collectors-choice",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "The Phantom of the Bopera",
+            "fullName": "Mike Finnerty",
+            "url": "mike-finnerty"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Brent Banulis",
+            "url": "brent-banulis"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Rob Hoff",
+            "url": "rob-hoff"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Lori Williams",
+            "url": "lori-williams"
+          }
+        ]
+      },
+      "startTime24": 19,
+      "startTime12": "7:00 PM",
+      "endTime12": "8:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Sunday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jack Shellac",
+        "url": "jack-shellac",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jackson Garrison",
+            "url": "jackson-garrison"
+          }
+        ]
+      },
+      "startTime24": 20,
+      "startTime12": "8:00 PM",
+      "endTime12": "9:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Sunday",
+      "show": {
+        "__typename": "Show",
+        "name": "Talking Jazz",
+        "url": "talking-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Monika Herzig",
+            "url": "monika-herzig"
+          }
+        ]
+      },
+      "startTime24": 21,
+      "startTime12": "9:00 PM",
+      "endTime12": "10:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Sunday",
+      "show": {
+        "__typename": "Show",
+        "name": "Night Lights",
+        "url": "night-lights",
+        "shortDescription": "Night Lights, is a weekly one-hour jazz radio program hosted by David Brent Johnson, focusing on jazz from the 1945-1990 era—a timespan that, as Johnson notes, “weirdly parallels Miles Davis on record and the Cold War.”",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "David Brent Johnson",
+            "url": "david-brent-johnson"
+          }
+        ]
+      },
+      "startTime24": 22,
+      "startTime12": "10:00 PM",
+      "endTime12": "11:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Sunday",
+      "show": {
+        "__typename": "Show",
+        "name": "Nocturne",
+        "url": "nocturne",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Rob Hoff",
+            "url": "rob-hoff"
+          }
+        ]
+      },
+      "startTime24": 23,
+      "startTime12": "11:00 PM",
+      "endTime12": "12:00 AM"
+    }
+  ],
+  "Monday": [
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Monday",
+      "show": {
+        "__typename": "Show",
+        "name": "American Songbook",
+        "url": "american-songbook",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "JM Jazz",
+            "fullName": "Joan Merrill",
+            "url": "joan-merrill"
+          }
+        ]
+      },
+      "startTime24": 0,
+      "startTime12": "12:00 AM",
+      "endTime12": "1:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Monday",
+      "show": {
+        "__typename": "Show",
+        "name": "New Vintage",
+        "url": "new-vintage",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Bill O'Connell",
+            "url": "bill-oconnell"
+          }
+        ]
+      },
+      "startTime24": 1,
+      "startTime12": "1:00 AM",
+      "endTime12": "2:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Monday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jazz Scene",
+        "url": "jazz-scene",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jake Longwell",
+            "url": "jake-longwell"
+          }
+        ]
+      },
+      "startTime24": 2,
+      "startTime12": "2:00 AM",
+      "endTime12": "3:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Monday",
+      "show": {
+        "__typename": "Show",
+        "name": "This is Jazz",
+        "url": "this-is-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dave Schwan",
+            "url": "dave-schwan"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Hill",
+            "url": "john-hill"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dee Alexander",
+            "url": "dee-alexander"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jana Lee Ross",
+            "url": "jana-lee-ross"
+          }
+        ]
+      },
+      "startTime24": 3,
+      "startTime12": "3:00 AM",
+      "endTime12": "8:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Monday",
+      "show": {
+        "__typename": "Show",
+        "name": "Morning Gloria",
+        "url": "morning-gloria",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Gloria Krolak",
+            "url": "gloria-krolak"
+          }
+        ]
+      },
+      "startTime24": 8,
+      "startTime12": "8:00 AM",
+      "endTime12": "9:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Monday",
+      "show": {
+        "__typename": "Show",
+        "name": "Afro-Cuban Latin",
+        "url": "afro-cuban-latin",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Russ Hamer",
+            "url": "russ-hamer"
+          }
+        ]
+      },
+      "startTime24": 9,
+      "startTime12": "9:00 AM",
+      "endTime12": "10:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Monday",
+      "show": {
+        "__typename": "Show",
+        "name": "Happy Birthday Dear Jazz Artist",
+        "url": "happy-birthday-dear-jazz-artist",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Laurie Villanueva",
+            "url": "laurie-villanueva"
+          }
+        ]
+      },
+      "startTime24": 10,
+      "startTime12": "10:00 AM",
+      "endTime12": "11:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Monday",
+      "show": {
+        "__typename": "Show",
+        "name": "This is Jazz",
+        "url": "this-is-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dave Schwan",
+            "url": "dave-schwan"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Hill",
+            "url": "john-hill"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dee Alexander",
+            "url": "dee-alexander"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jana Lee Ross",
+            "url": "jana-lee-ross"
+          }
+        ]
+      },
+      "startTime24": 10,
+      "startTime12": "10:00 AM",
+      "endTime12": "11:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Monday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jazz For Everyone",
+        "url": "jazz-for-everyone",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Larry Dwyer",
+            "url": "larry-dwyer"
+          }
+        ]
+      },
+      "startTime24": 11,
+      "startTime12": "11:00 AM",
+      "endTime12": "12:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Monday",
+      "show": {
+        "__typename": "Show",
+        "name": "Collector's Choice",
+        "url": "collectors-choice",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "The Phantom of the Bopera",
+            "fullName": "Mike Finnerty",
+            "url": "mike-finnerty"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Brent Banulis",
+            "url": "brent-banulis"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Rob Hoff",
+            "url": "rob-hoff"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Lori Williams",
+            "url": "lori-williams"
+          }
+        ]
+      },
+      "startTime24": 12,
+      "startTime12": "12:00 PM",
+      "endTime12": "1:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Monday",
+      "show": {
+        "__typename": "Show",
+        "name": "Research And Development",
+        "url": "research-and-development",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Charlie Kohlhase",
+            "url": "charlie-kohlhase"
+          }
+        ]
+      },
+      "startTime24": 13,
+      "startTime12": "1:00 PM",
+      "endTime12": "3:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Monday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jazz with David Basse",
+        "url": "jazz-with-david-basse",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "David Basse",
+            "url": "david-basse"
+          }
+        ]
+      },
+      "startTime24": 15,
+      "startTime12": "3:00 PM",
+      "endTime12": "6:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Monday",
+      "show": {
+        "__typename": "Show",
+        "name": "New Vintage",
+        "url": "new-vintage",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Bill O'Connell",
+            "url": "bill-oconnell"
+          }
+        ]
+      },
+      "startTime24": 18,
+      "startTime12": "6:00 PM",
+      "endTime12": "7:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Monday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jazz Focus",
+        "url": "jazz-focus",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Clark",
+            "url": "john-clark"
+          }
+        ]
+      },
+      "startTime24": 19,
+      "startTime12": "7:00 PM",
+      "endTime12": "8:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Monday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jazz A La Mode",
+        "url": "jazz-a-la-mode",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Tom Reney",
+            "url": "tom-reney"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Avery Sharpe",
+            "url": "avery-sharpe"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Peter Sokolowski",
+            "url": "peter-sokolowski"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Bex Taylor",
+            "url": "bex-taylor"
+          }
+        ]
+      },
+      "startTime24": 20,
+      "startTime12": "8:00 PM",
+      "endTime12": "11:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Monday",
+      "show": {
+        "__typename": "Show",
+        "name": "The Nite Owl",
+        "url": "the-nite-owl",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Stanley Welch",
+            "url": "stan-welch"
+          }
+        ]
+      },
+      "startTime24": 23,
+      "startTime12": "11:00 PM",
+      "endTime12": "12:00 AM"
+    }
+  ],
+  "Tuesday": [
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Tuesday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jazz with David Basse",
+        "url": "jazz-with-david-basse",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "David Basse",
+            "url": "david-basse"
+          }
+        ]
+      },
+      "startTime24": 0,
+      "startTime12": "12:00 AM",
+      "endTime12": "3:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Tuesday",
+      "show": {
+        "__typename": "Show",
+        "name": "This is Jazz",
+        "url": "this-is-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dave Schwan",
+            "url": "dave-schwan"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Hill",
+            "url": "john-hill"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dee Alexander",
+            "url": "dee-alexander"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jana Lee Ross",
+            "url": "jana-lee-ross"
+          }
+        ]
+      },
+      "startTime24": 3,
+      "startTime12": "3:00 AM",
+      "endTime12": "8:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Tuesday",
+      "show": {
+        "__typename": "Show",
+        "name": "Big Band Blow Out",
+        "url": "big-band-blow-out",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Brent Banulis",
+            "url": "brent-banulis"
+          }
+        ]
+      },
+      "startTime24": 8,
+      "startTime12": "8:00 AM",
+      "endTime12": "8:30 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Tuesday",
+      "show": {
+        "__typename": "Show",
+        "name": "The Jazz Train",
+        "url": "the-jazz-train",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jon Pollack",
+            "url": "jon-pollack"
+          }
+        ]
+      },
+      "startTime24": 8.5,
+      "startTime12": "8:30 AM",
+      "endTime12": "10:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Tuesday",
+      "show": {
+        "__typename": "Show",
+        "name": "Happy Birthday Dear Jazz Artist",
+        "url": "happy-birthday-dear-jazz-artist",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Laurie Villanueva",
+            "url": "laurie-villanueva"
+          }
+        ]
+      },
+      "startTime24": 10,
+      "startTime12": "10:00 AM",
+      "endTime12": "11:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Tuesday",
+      "show": {
+        "__typename": "Show",
+        "name": "This is Jazz",
+        "url": "this-is-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dave Schwan",
+            "url": "dave-schwan"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Hill",
+            "url": "john-hill"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dee Alexander",
+            "url": "dee-alexander"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jana Lee Ross",
+            "url": "jana-lee-ross"
+          }
+        ]
+      },
+      "startTime24": 10,
+      "startTime12": "10:00 AM",
+      "endTime12": "11:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Tuesday",
+      "show": {
+        "__typename": "Show",
+        "name": "Talking Jazz",
+        "url": "talking-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Monika Herzig",
+            "url": "monika-herzig"
+          }
+        ]
+      },
+      "startTime24": 11,
+      "startTime12": "11:00 AM",
+      "endTime12": "12:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Tuesday",
+      "show": {
+        "__typename": "Show",
+        "name": "Collector's Choice",
+        "url": "collectors-choice",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "The Phantom of the Bopera",
+            "fullName": "Mike Finnerty",
+            "url": "mike-finnerty"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Brent Banulis",
+            "url": "brent-banulis"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Rob Hoff",
+            "url": "rob-hoff"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Lori Williams",
+            "url": "lori-williams"
+          }
+        ]
+      },
+      "startTime24": 12,
+      "startTime12": "12:00 PM",
+      "endTime12": "3:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Tuesday",
+      "show": {
+        "__typename": "Show",
+        "name": "This is Jazz",
+        "url": "this-is-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dave Schwan",
+            "url": "dave-schwan"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Hill",
+            "url": "john-hill"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dee Alexander",
+            "url": "dee-alexander"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jana Lee Ross",
+            "url": "jana-lee-ross"
+          }
+        ]
+      },
+      "startTime24": 15,
+      "startTime12": "3:00 PM",
+      "endTime12": "6:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Tuesday",
+      "show": {
+        "__typename": "Show",
+        "name": "Big Band Blow Out",
+        "url": "big-band-blow-out",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Brent Banulis",
+            "url": "brent-banulis"
+          }
+        ]
+      },
+      "startTime24": 18,
+      "startTime12": "6:00 PM",
+      "endTime12": "6:30 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Tuesday",
+      "show": {
+        "__typename": "Show",
+        "name": "The Jazz Train",
+        "url": "the-jazz-train",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jon Pollack",
+            "url": "jon-pollack"
+          }
+        ]
+      },
+      "startTime24": 18.5,
+      "startTime12": "6:30 PM",
+      "endTime12": "8:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Tuesday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jazz A La Mode",
+        "url": "jazz-a-la-mode",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Tom Reney",
+            "url": "tom-reney"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Avery Sharpe",
+            "url": "avery-sharpe"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Peter Sokolowski",
+            "url": "peter-sokolowski"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Bex Taylor",
+            "url": "bex-taylor"
+          }
+        ]
+      },
+      "startTime24": 20,
+      "startTime12": "8:00 PM",
+      "endTime12": "11:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Tuesday",
+      "show": {
+        "__typename": "Show",
+        "name": "The Nite Owl",
+        "url": "the-nite-owl",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Stanley Welch",
+            "url": "stan-welch"
+          }
+        ]
+      },
+      "startTime24": 23,
+      "startTime12": "11:00 PM",
+      "endTime12": "12:00 AM"
+    }
+  ],
+  "Wednesday": [
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Wednesday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jazz with David Basse",
+        "url": "jazz-with-david-basse",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "David Basse",
+            "url": "david-basse"
+          }
+        ]
+      },
+      "startTime24": 0,
+      "startTime12": "12:00 AM",
+      "endTime12": "3:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Wednesday",
+      "show": {
+        "__typename": "Show",
+        "name": "This is Jazz",
+        "url": "this-is-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dave Schwan",
+            "url": "dave-schwan"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Hill",
+            "url": "john-hill"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dee Alexander",
+            "url": "dee-alexander"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jana Lee Ross",
+            "url": "jana-lee-ross"
+          }
+        ]
+      },
+      "startTime24": 3,
+      "startTime12": "3:00 AM",
+      "endTime12": "8:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Wednesday",
+      "show": {
+        "__typename": "Show",
+        "name": "Mornin' with Linda Kay",
+        "url": "mornin-with-linda-kay",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Linda Poindexter",
+            "url": "linda-poindexter"
+          }
+        ]
+      },
+      "startTime24": 8,
+      "startTime12": "8:00 AM",
+      "endTime12": "9:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Wednesday",
+      "show": {
+        "__typename": "Show",
+        "name": "Sound Ideas",
+        "url": "sound-ideas",
+        "shortDescription": "More than just a jazz show, each episode of Sound Ideas presents some great story telling by jazz and blues musicians and spoken word artists. By exploring the many different genres within the Jazz idiom, the show appeals to both the jazz aficionado and those who listen on the jazz periphery.",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Clay Ryder",
+            "url": "clay-ryder"
+          }
+        ]
+      },
+      "startTime24": 9,
+      "startTime12": "9:00 AM",
+      "endTime12": "10:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Wednesday",
+      "show": {
+        "__typename": "Show",
+        "name": "Happy Birthday Dear Jazz Artist",
+        "url": "happy-birthday-dear-jazz-artist",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Laurie Villanueva",
+            "url": "laurie-villanueva"
+          }
+        ]
+      },
+      "startTime24": 10,
+      "startTime12": "10:00 AM",
+      "endTime12": "11:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Wednesday",
+      "show": {
+        "__typename": "Show",
+        "name": "This is Jazz",
+        "url": "this-is-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dave Schwan",
+            "url": "dave-schwan"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Hill",
+            "url": "john-hill"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dee Alexander",
+            "url": "dee-alexander"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jana Lee Ross",
+            "url": "jana-lee-ross"
+          }
+        ]
+      },
+      "startTime24": 10,
+      "startTime12": "10:00 AM",
+      "endTime12": "11:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Wednesday",
+      "show": {
+        "__typename": "Show",
+        "name": "Reflections on Jazz",
+        "url": "reflections-on-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Mark Gridley",
+            "url": "mark-gridley"
+          }
+        ]
+      },
+      "startTime24": 11,
+      "startTime12": "11:00 AM",
+      "endTime12": "12:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Wednesday",
+      "show": {
+        "__typename": "Show",
+        "name": "Collector's Choice",
+        "url": "collectors-choice",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "The Phantom of the Bopera",
+            "fullName": "Mike Finnerty",
+            "url": "mike-finnerty"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Brent Banulis",
+            "url": "brent-banulis"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Rob Hoff",
+            "url": "rob-hoff"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Lori Williams",
+            "url": "lori-williams"
+          }
+        ]
+      },
+      "startTime24": 12,
+      "startTime12": "12:00 PM",
+      "endTime12": "1:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Wednesday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jazz Scene",
+        "url": "jazz-scene",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jake Longwell",
+            "url": "jake-longwell"
+          }
+        ]
+      },
+      "startTime24": 13,
+      "startTime12": "1:00 PM",
+      "endTime12": "2:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Wednesday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jazz Haven",
+        "url": "jazz-haven",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Stanley Welch",
+            "url": "stan-welch"
+          }
+        ]
+      },
+      "startTime24": 14,
+      "startTime12": "2:00 PM",
+      "endTime12": "3:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Wednesday",
+      "show": {
+        "__typename": "Show",
+        "name": "This is Jazz",
+        "url": "this-is-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dave Schwan",
+            "url": "dave-schwan"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Hill",
+            "url": "john-hill"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dee Alexander",
+            "url": "dee-alexander"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jana Lee Ross",
+            "url": "jana-lee-ross"
+          }
+        ]
+      },
+      "startTime24": 15,
+      "startTime12": "3:00 PM",
+      "endTime12": "6:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Wednesday",
+      "show": {
+        "__typename": "Show",
+        "name": "Afro-Cuban Latin",
+        "url": "afro-cuban-latin",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Russ Hamer",
+            "url": "russ-hamer"
+          }
+        ]
+      },
+      "startTime24": 18,
+      "startTime12": "6:00 PM",
+      "endTime12": "7:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Wednesday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jack Shellac",
+        "url": "jack-shellac",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jackson Garrison",
+            "url": "jackson-garrison"
+          }
+        ]
+      },
+      "startTime24": 19,
+      "startTime12": "7:00 PM",
+      "endTime12": "8:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Wednesday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jazz A La Mode",
+        "url": "jazz-a-la-mode",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Tom Reney",
+            "url": "tom-reney"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Avery Sharpe",
+            "url": "avery-sharpe"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Peter Sokolowski",
+            "url": "peter-sokolowski"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Bex Taylor",
+            "url": "bex-taylor"
+          }
+        ]
+      },
+      "startTime24": 20,
+      "startTime12": "8:00 PM",
+      "endTime12": "11:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Wednesday",
+      "show": {
+        "__typename": "Show",
+        "name": "The Nite Owl",
+        "url": "the-nite-owl",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Stanley Welch",
+            "url": "stan-welch"
+          }
+        ]
+      },
+      "startTime24": 23,
+      "startTime12": "11:00 PM",
+      "endTime12": "12:00 AM"
+    }
+  ],
+  "Thursday": [
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Thursday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jazz with David Basse",
+        "url": "jazz-with-david-basse",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "David Basse",
+            "url": "david-basse"
+          }
+        ]
+      },
+      "startTime24": 0,
+      "startTime12": "12:00 AM",
+      "endTime12": "3:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Thursday",
+      "show": {
+        "__typename": "Show",
+        "name": "This is Jazz",
+        "url": "this-is-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dave Schwan",
+            "url": "dave-schwan"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Hill",
+            "url": "john-hill"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dee Alexander",
+            "url": "dee-alexander"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jana Lee Ross",
+            "url": "jana-lee-ross"
+          }
+        ]
+      },
+      "startTime24": 3,
+      "startTime12": "3:00 AM",
+      "endTime12": "8:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Thursday",
+      "show": {
+        "__typename": "Show",
+        "name": "Mornin' with Matt",
+        "url": "mornin-with-matt",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Matt Merten",
+            "url": "matt-merten"
+          }
+        ]
+      },
+      "startTime24": 8,
+      "startTime12": "8:00 AM",
+      "endTime12": "9:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Thursday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jazz Focus",
+        "url": "jazz-focus",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Clark",
+            "url": "john-clark"
+          }
+        ]
+      },
+      "startTime24": 9,
+      "startTime12": "9:00 AM",
+      "endTime12": "10:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Thursday",
+      "show": {
+        "__typename": "Show",
+        "name": "Happy Birthday Dear Jazz Artist",
+        "url": "happy-birthday-dear-jazz-artist",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Laurie Villanueva",
+            "url": "laurie-villanueva"
+          }
+        ]
+      },
+      "startTime24": 10,
+      "startTime12": "10:00 AM",
+      "endTime12": "11:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Thursday",
+      "show": {
+        "__typename": "Show",
+        "name": "This is Jazz",
+        "url": "this-is-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dave Schwan",
+            "url": "dave-schwan"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Hill",
+            "url": "john-hill"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dee Alexander",
+            "url": "dee-alexander"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jana Lee Ross",
+            "url": "jana-lee-ross"
+          }
+        ]
+      },
+      "startTime24": 10,
+      "startTime12": "10:00 AM",
+      "endTime12": "11:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Thursday",
+      "show": {
+        "__typename": "Show",
+        "name": "Progressions",
+        "url": "progressions",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jake Longwell",
+            "url": "jake-longwell"
+          }
+        ]
+      },
+      "startTime24": 11,
+      "startTime12": "11:00 AM",
+      "endTime12": "12:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Thursday",
+      "show": {
+        "__typename": "Show",
+        "name": "Collector's Choice",
+        "url": "collectors-choice",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "The Phantom of the Bopera",
+            "fullName": "Mike Finnerty",
+            "url": "mike-finnerty"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Brent Banulis",
+            "url": "brent-banulis"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Rob Hoff",
+            "url": "rob-hoff"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Lori Williams",
+            "url": "lori-williams"
+          }
+        ]
+      },
+      "startTime24": 12,
+      "startTime12": "12:00 PM",
+      "endTime12": "3:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Thursday",
+      "show": {
+        "__typename": "Show",
+        "name": "This is Jazz",
+        "url": "this-is-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dave Schwan",
+            "url": "dave-schwan"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Hill",
+            "url": "john-hill"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dee Alexander",
+            "url": "dee-alexander"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jana Lee Ross",
+            "url": "jana-lee-ross"
+          }
+        ]
+      },
+      "startTime24": 15,
+      "startTime12": "3:00 PM",
+      "endTime12": "6:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Thursday",
+      "show": {
+        "__typename": "Show",
+        "name": "Talking Jazz",
+        "url": "talking-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Monika Herzig",
+            "url": "monika-herzig"
+          }
+        ]
+      },
+      "startTime24": 18,
+      "startTime12": "6:00 PM",
+      "endTime12": "7:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Thursday",
+      "show": {
+        "__typename": "Show",
+        "name": "State of Indiana",
+        "url": "state-of-indiana",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Leslie Fuller",
+            "url": "leslie-fuller"
+          }
+        ]
+      },
+      "startTime24": 19,
+      "startTime12": "7:00 PM",
+      "endTime12": "8:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Thursday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jazz A La Mode",
+        "url": "jazz-a-la-mode",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Tom Reney",
+            "url": "tom-reney"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Avery Sharpe",
+            "url": "avery-sharpe"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Peter Sokolowski",
+            "url": "peter-sokolowski"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Bex Taylor",
+            "url": "bex-taylor"
+          }
+        ]
+      },
+      "startTime24": 20,
+      "startTime12": "8:00 PM",
+      "endTime12": "11:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Thursday",
+      "show": {
+        "__typename": "Show",
+        "name": "The Nite Owl",
+        "url": "the-nite-owl",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Stanley Welch",
+            "url": "stan-welch"
+          }
+        ]
+      },
+      "startTime24": 23,
+      "startTime12": "11:00 PM",
+      "endTime12": "12:00 AM"
+    }
+  ],
+  "Friday": [
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Friday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jazz with David Basse",
+        "url": "jazz-with-david-basse",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "David Basse",
+            "url": "david-basse"
+          }
+        ]
+      },
+      "startTime24": 0,
+      "startTime12": "12:00 AM",
+      "endTime12": "3:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Friday",
+      "show": {
+        "__typename": "Show",
+        "name": "This is Jazz",
+        "url": "this-is-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dave Schwan",
+            "url": "dave-schwan"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Hill",
+            "url": "john-hill"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dee Alexander",
+            "url": "dee-alexander"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jana Lee Ross",
+            "url": "jana-lee-ross"
+          }
+        ]
+      },
+      "startTime24": 3,
+      "startTime12": "3:00 AM",
+      "endTime12": "8:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Friday",
+      "show": {
+        "__typename": "Show",
+        "name": "Mornin' with Mike",
+        "url": "mornin-with-mike",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "The Phantom of the Bopera",
+            "fullName": "Mike Finnerty",
+            "url": "mike-finnerty"
+          }
+        ]
+      },
+      "startTime24": 8,
+      "startTime12": "8:00 AM",
+      "endTime12": "9:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Friday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jack Shellac",
+        "url": "jack-shellac",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jackson Garrison",
+            "url": "jackson-garrison"
+          }
+        ]
+      },
+      "startTime24": 9,
+      "startTime12": "9:00 AM",
+      "endTime12": "10:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Friday",
+      "show": {
+        "__typename": "Show",
+        "name": "Happy Birthday Dear Jazz Artist",
+        "url": "happy-birthday-dear-jazz-artist",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Laurie Villanueva",
+            "url": "laurie-villanueva"
+          }
+        ]
+      },
+      "startTime24": 10,
+      "startTime12": "10:00 AM",
+      "endTime12": "11:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Friday",
+      "show": {
+        "__typename": "Show",
+        "name": "This is Jazz",
+        "url": "this-is-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dave Schwan",
+            "url": "dave-schwan"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Hill",
+            "url": "john-hill"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dee Alexander",
+            "url": "dee-alexander"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jana Lee Ross",
+            "url": "jana-lee-ross"
+          }
+        ]
+      },
+      "startTime24": 10,
+      "startTime12": "10:00 AM",
+      "endTime12": "11:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Friday",
+      "show": {
+        "__typename": "Show",
+        "name": "This is Jazz",
+        "url": "this-is-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dave Schwan",
+            "url": "dave-schwan"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Hill",
+            "url": "john-hill"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dee Alexander",
+            "url": "dee-alexander"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jana Lee Ross",
+            "url": "jana-lee-ross"
+          }
+        ]
+      },
+      "startTime24": 11,
+      "startTime12": "11:00 AM",
+      "endTime12": "12:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Friday",
+      "show": {
+        "__typename": "Show",
+        "name": "Collector's Choice",
+        "url": "collectors-choice",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "The Phantom of the Bopera",
+            "fullName": "Mike Finnerty",
+            "url": "mike-finnerty"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Brent Banulis",
+            "url": "brent-banulis"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Rob Hoff",
+            "url": "rob-hoff"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Lori Williams",
+            "url": "lori-williams"
+          }
+        ]
+      },
+      "startTime24": 12,
+      "startTime12": "12:00 PM",
+      "endTime12": "1:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Friday",
+      "show": {
+        "__typename": "Show",
+        "name": "This is Jazz",
+        "url": "this-is-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dave Schwan",
+            "url": "dave-schwan"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Hill",
+            "url": "john-hill"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dee Alexander",
+            "url": "dee-alexander"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jana Lee Ross",
+            "url": "jana-lee-ross"
+          }
+        ]
+      },
+      "startTime24": 13,
+      "startTime12": "1:00 PM",
+      "endTime12": "4:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Friday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jazz For Everyone",
+        "url": "jazz-for-everyone",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Larry Dwyer",
+            "url": "larry-dwyer"
+          }
+        ]
+      },
+      "startTime24": 16,
+      "startTime12": "4:00 PM",
+      "endTime12": "5:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Friday",
+      "show": {
+        "__typename": "Show",
+        "name": "Reflections on Jazz",
+        "url": "reflections-on-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Mark Gridley",
+            "url": "mark-gridley"
+          }
+        ]
+      },
+      "startTime24": 17,
+      "startTime12": "5:00 PM",
+      "endTime12": "6:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Friday",
+      "show": {
+        "__typename": "Show",
+        "name": "Touch of Classics",
+        "url": "touch-of-classics",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jane Fischer",
+            "url": "jane-fischer"
+          }
+        ]
+      },
+      "startTime24": 18,
+      "startTime12": "6:00 PM",
+      "endTime12": "8:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Friday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jazz A La Mode",
+        "url": "jazz-a-la-mode",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Tom Reney",
+            "url": "tom-reney"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Avery Sharpe",
+            "url": "avery-sharpe"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Peter Sokolowski",
+            "url": "peter-sokolowski"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Bex Taylor",
+            "url": "bex-taylor"
+          }
+        ]
+      },
+      "startTime24": 20,
+      "startTime12": "8:00 PM",
+      "endTime12": "11:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Friday",
+      "show": {
+        "__typename": "Show",
+        "name": "The Nite Owl",
+        "url": "the-nite-owl",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Stanley Welch",
+            "url": "stan-welch"
+          }
+        ]
+      },
+      "startTime24": 23,
+      "startTime12": "11:00 PM",
+      "endTime12": "12:00 AM"
+    }
+  ],
+  "Saturday": [
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Saturday",
+      "show": {
+        "__typename": "Show",
+        "name": "Collector's Choice",
+        "url": "collectors-choice",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "The Phantom of the Bopera",
+            "fullName": "Mike Finnerty",
+            "url": "mike-finnerty"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Brent Banulis",
+            "url": "brent-banulis"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Rob Hoff",
+            "url": "rob-hoff"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Lori Williams",
+            "url": "lori-williams"
+          }
+        ]
+      },
+      "startTime24": 0,
+      "startTime12": "12:00 AM",
+      "endTime12": "3:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Saturday",
+      "show": {
+        "__typename": "Show",
+        "name": "This is Jazz",
+        "url": "this-is-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dave Schwan",
+            "url": "dave-schwan"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Hill",
+            "url": "john-hill"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dee Alexander",
+            "url": "dee-alexander"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jana Lee Ross",
+            "url": "jana-lee-ross"
+          }
+        ]
+      },
+      "startTime24": 3,
+      "startTime12": "3:00 AM",
+      "endTime12": "8:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Saturday",
+      "show": {
+        "__typename": "Show",
+        "name": "Mornin' with Tish",
+        "url": "mornin-with-tish",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Tish Adams",
+            "url": "tish-adams"
+          }
+        ]
+      },
+      "startTime24": 8,
+      "startTime12": "8:00 AM",
+      "endTime12": "9:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Saturday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jazz for Kids, 1 to 92",
+        "url": "jazz-for-kids",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Lisa Yves",
+            "url": "lisa-yves"
+          }
+        ]
+      },
+      "startTime24": 9,
+      "startTime12": "9:00 AM",
+      "endTime12": "10:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Saturday",
+      "show": {
+        "__typename": "Show",
+        "name": "Happy Birthday Dear Jazz Artist",
+        "url": "happy-birthday-dear-jazz-artist",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Laurie Villanueva",
+            "url": "laurie-villanueva"
+          }
+        ]
+      },
+      "startTime24": 10,
+      "startTime12": "10:00 AM",
+      "endTime12": "11:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Saturday",
+      "show": {
+        "__typename": "Show",
+        "name": "This is Jazz",
+        "url": "this-is-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dave Schwan",
+            "url": "dave-schwan"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Hill",
+            "url": "john-hill"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dee Alexander",
+            "url": "dee-alexander"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jana Lee Ross",
+            "url": "jana-lee-ross"
+          }
+        ]
+      },
+      "startTime24": 10,
+      "startTime12": "10:00 AM",
+      "endTime12": "11:00 AM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Saturday",
+      "show": {
+        "__typename": "Show",
+        "name": "Reflections on Jazz",
+        "url": "reflections-on-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Mark Gridley",
+            "url": "mark-gridley"
+          }
+        ]
+      },
+      "startTime24": 11,
+      "startTime12": "11:00 AM",
+      "endTime12": "12:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Saturday",
+      "show": {
+        "__typename": "Show",
+        "name": "State of Indiana",
+        "url": "state-of-indiana",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Leslie Fuller",
+            "url": "leslie-fuller"
+          }
+        ]
+      },
+      "startTime24": 12,
+      "startTime12": "12:00 PM",
+      "endTime12": "1:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Saturday",
+      "show": {
+        "__typename": "Show",
+        "name": "This is Jazz",
+        "url": "this-is-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dave Schwan",
+            "url": "dave-schwan"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Hill",
+            "url": "john-hill"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Dee Alexander",
+            "url": "dee-alexander"
+          },
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Jana Lee Ross",
+            "url": "jana-lee-ross"
+          }
+        ]
+      },
+      "startTime24": 13,
+      "startTime12": "1:00 PM",
+      "endTime12": "4:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Saturday",
+      "show": {
+        "__typename": "Show",
+        "name": "Jazz Focus",
+        "url": "jazz-focus",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "John Clark",
+            "url": "john-clark"
+          }
+        ]
+      },
+      "startTime24": 16,
+      "startTime12": "4:00 PM",
+      "endTime12": "5:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Saturday",
+      "show": {
+        "__typename": "Show",
+        "name": "American Songbook",
+        "url": "american-songbook",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "JM Jazz",
+            "fullName": "Joan Merrill",
+            "url": "joan-merrill"
+          }
+        ]
+      },
+      "startTime24": 17,
+      "startTime12": "5:00 PM",
+      "endTime12": "6:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Saturday",
+      "show": {
+        "__typename": "Show",
+        "name": "Sound Ideas",
+        "url": "sound-ideas",
+        "shortDescription": "More than just a jazz show, each episode of Sound Ideas presents some great story telling by jazz and blues musicians and spoken word artists. By exploring the many different genres within the Jazz idiom, the show appeals to both the jazz aficionado and those who listen on the jazz periphery.",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Clay Ryder",
+            "url": "clay-ryder"
+          }
+        ]
+      },
+      "startTime24": 18,
+      "startTime12": "6:00 PM",
+      "endTime12": "7:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Saturday",
+      "show": {
+        "__typename": "Show",
+        "name": "Afro-Cuban Latin",
+        "url": "afro-cuban-latin",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Russ Hamer",
+            "url": "russ-hamer"
+          }
+        ]
+      },
+      "startTime24": 19,
+      "startTime12": "7:00 PM",
+      "endTime12": "8:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Saturday",
+      "show": {
+        "__typename": "Show",
+        "name": "Berkshire Jazz",
+        "url": "berkshire-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Phil Tierney",
+            "url": "phil-tierney"
+          }
+        ]
+      },
+      "startTime24": 20,
+      "startTime12": "8:00 PM",
+      "endTime12": "10:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Saturday",
+      "show": {
+        "__typename": "Show",
+        "name": "Prebys on Jazz",
+        "url": "prebys-on-jazz",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Scott Prebys",
+            "url": "scott-prebys"
+          }
+        ]
+      },
+      "startTime24": 22,
+      "startTime12": "10:00 PM",
+      "endTime12": "11:00 PM"
+    },
+    {
+      "__typename": "WeeklySchedule",
+      "day": "Saturday",
+      "show": {
+        "__typename": "Show",
+        "name": "Last Call",
+        "url": "last-call",
+        "shortDescription": "",
+        "host": [
+          {
+            "__typename": "DJ",
+            "nickName": "",
+            "fullName": "Brent Banulis",
+            "url": "brent-banulis"
+          }
+        ]
+      },
+      "startTime24": 23,
+      "startTime12": "11:00 PM",
+      "endTime12": "12:00 AM"
+    }
+  ]
+}
