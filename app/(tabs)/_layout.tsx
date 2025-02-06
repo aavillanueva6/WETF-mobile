@@ -8,6 +8,11 @@ import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from 'react-native';
 
+const handleActionPress = () => {
+  console.log('Action button pressed!');
+  // Add your custom functionality here
+};
+
 export default function TabLayout() {
   const colorScheme = useColorScheme();
 
@@ -38,9 +43,25 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name='explore'
+        name='action'
+        listeners={{
+          tabPress: (e) => {
+            // Prevent default action
+            e.preventDefault();
+            handleActionPress();
+          },
+        }}
         options={{
-          title: 'Explore',
+          title: 'Listen Live',
+          tabBarIcon: ({ color }) => (
+            <IconSymbol size={28} name='plus.circle.fill' color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name='schedule'
+        options={{
+          title: 'WETF Schedule',
           tabBarIcon: ({ color }) => (
             <IconSymbol size={28} name='paperplane.fill' color={color} />
           ),
