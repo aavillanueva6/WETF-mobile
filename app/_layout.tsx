@@ -1,29 +1,42 @@
+import {
+  DarkTheme,
+  DefaultTheme,
+  ThemeProvider,
+} from '@react-navigation/native';
+import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
-import { ThemeProvider } from '@/context/ThemeContext';
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
-import { useContext } from 'react';
-import { StyleSheet } from 'react-native';
-import { ThemeContext } from '@/context/ThemeContext';
-import AppContainer from '@/components/AppContainer';
+import * as SplashScreen from 'expo-splash-screen';
+import { StatusBar } from 'expo-status-bar';
+import { useEffect } from 'react';
+import 'react-native-reanimated';
+import { useColorScheme } from 'react-native';
 
-interface ThemeType {
-  text: string;
-  background: string;
-  icon: string;
-  button: string;
-  disabledButton: string;
-  primary: string;
-  secondary: string;
-  tertiary: string;
-  tertiary70: string;
-}
+// Prevent the splash screen from auto-hiding before asset loading is complete.
+SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
+  const colorScheme = useColorScheme();
+  const [loaded] = useFonts({
+    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+  });
+
+  useEffect(() => {
+    if (loaded) {
+      SplashScreen.hideAsync();
+    }
+  }, [loaded]);
+
+  if (!loaded) {
+    return null;
+  }
+
   return (
-    <ThemeProvider>
-      <AppContainer />
+    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+      <Stack>
+        <Stack.Screen name='(tabs)' options={{ headerShown: false }} />
+        <Stack.Screen name='+not-found' />
+      </Stack>
+      <StatusBar style='auto' />
     </ThemeProvider>
   );
 }
