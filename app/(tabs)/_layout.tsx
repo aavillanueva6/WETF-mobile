@@ -1,6 +1,7 @@
 import { Tabs } from 'expo-router';
-import React from 'react';
+import React, { useState } from 'react';
 import { Platform } from 'react-native';
+import { Audio, InterruptionModeAndroid, InterruptionModeIOS } from 'expo-av';
 
 import { HapticTab } from '@/components/HapticTab';
 import { IconSymbol } from '@/components/ui/IconSymbol';
@@ -8,12 +9,71 @@ import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from 'react-native';
 
-const handleActionPress = () => {
-  console.log('Action button pressed!');
-  // Add your custom functionality here
-};
-
 export default function TabLayout() {
+  const handleActionPress = async () => {
+    console.log('Action button pressed!');
+    // Add your custom functionality here
+    if (audioPlayingStatus) {
+      // console.log('handle function goes to stop');
+      await stopSound();
+    } else {
+      // console.log('handle function goes to start');
+      await playSound();
+    }
+  };
+
+  async function playSound() {
+    // console.log('Loading Sound');
+    setButtonDisabled(true);
+    setButtonText('Stream Loading');
+
+    await Audio.setAudioModeAsync({
+      playsInSilentModeIOS: true,
+      staysActiveInBackground: true,
+      interruptionModeIOS: InterruptionModeIOS.DuckOthers,
+      interruptionModeAndroid: InterruptionModeAndroid.DuckOthers,
+      shouldDuckAndroid: true,
+      playThroughEarpieceAndroid: true,
+    });
+
+    const { sound } = await Audio.Sound.createAsync(avSource);
+    setSound(sound);
+
+    await sound.playAsync();
+
+    const intervalId = setInterval(async () => {
+      let audioStatus = await sound.getStatusAsync();
+      //@ts-ignore
+      if (audioStatus.isPlaying) {
+        setButtonText('Pause Stream');
+        // console.log('Playing Sound');
+        setButtonDisabled(false);
+        setAudioPlayingStatus(true);
+        clearInterval(intervalId); // Stop checking once the condition is met
+      }
+    }, 100); // Check every 100 ms
+  }
+  async function stopSound() {
+    //@ts-ignore
+    await sound.pauseAsync();
+    setButtonText('Play Live Stream');
+    setAudioPlayingStatus(false);
+
+    // console.log('stopping Playback');
+  }
+
+  const audioSource: string =
+    'https://ssl-proxy.icastcenter.com/get.php?type=Icecast&server=199.180.72.2&port=9007&mount=/stream&data=mp3';
+  const [buttonText, setButtonText] = useState<string>('Listen Live');
+  const [buttonDisabled, setButtonDisabled] = useState<boolean>(false);
+  const [audioPlayingStatus, setAudioPlayingStatus] = useState<boolean>(false);
+
+  const [sound, setSound] = useState<Audio.Sound>();
+
+  const avSource = {
+    uri: audioSource,
+  };
+
   const colorScheme = useColorScheme();
 
   return (
@@ -48,11 +108,13 @@ export default function TabLayout() {
           tabPress: (e) => {
             // Prevent default action
             e.preventDefault();
-            handleActionPress();
+            if (!buttonDisabled) {
+              handleActionPress();
+            }
           },
         }}
         options={{
-          title: 'Listen Live',
+          title: `${buttonText}`,
           tabBarIcon: ({ color }) => (
             <IconSymbol size={28} name='plus.circle.fill' color={color} />
           ),
