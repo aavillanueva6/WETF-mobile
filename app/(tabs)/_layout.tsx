@@ -11,7 +11,7 @@ import { useColorScheme } from 'react-native';
 
 export default function TabLayout() {
   const handleActionPress = async () => {
-    console.log('Action button pressed!');
+    // console.log('Action button pressed!');
     // Add your custom functionality here
     if (audioPlayingStatus) {
       // console.log('handle function goes to stop');
