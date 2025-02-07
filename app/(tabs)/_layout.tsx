@@ -25,6 +25,7 @@ export default function TabLayout() {
   async function playSound() {
     // console.log('Loading Sound');
     setButtonDisabled(true);
+    setButtonIcon('house.fill'); //update to a icon that indicates loading - TODO
     setButtonText('Stream Loading');
 
     await Audio.setAudioModeAsync({
@@ -49,6 +50,7 @@ export default function TabLayout() {
         // console.log('Playing Sound');
         setButtonDisabled(false);
         setAudioPlayingStatus(true);
+        setButtonIcon('paperplane.fill'); // set to pause button - TODO
         clearInterval(intervalId); // Stop checking once the condition is met
       }
     }, 100); // Check every 100 ms
@@ -57,6 +59,7 @@ export default function TabLayout() {
     //@ts-ignore
     await sound.pauseAsync();
     setButtonText('Play Live Stream');
+    setButtonIcon('plus.circle.fill'); //set to a play button - TODO
     setAudioPlayingStatus(false);
 
     // console.log('stopping Playback');
@@ -67,6 +70,7 @@ export default function TabLayout() {
   const [buttonText, setButtonText] = useState<string>('Listen Live');
   const [buttonDisabled, setButtonDisabled] = useState<boolean>(false);
   const [audioPlayingStatus, setAudioPlayingStatus] = useState<boolean>(false);
+  const [buttonIcon, setButtonIcon] = useState<string>('plus.circle.fill'); //set to a play button - TODO
 
   const [sound, setSound] = useState<Audio.Sound>();
 
@@ -116,7 +120,8 @@ export default function TabLayout() {
         options={{
           title: `${buttonText}`,
           tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name='plus.circle.fill' color={color} />
+            //@ts-ignore
+            <IconSymbol size={28} name={`${buttonIcon}`} color={color} />
           ),
         }}
       />
