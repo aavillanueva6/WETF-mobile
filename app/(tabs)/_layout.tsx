@@ -25,7 +25,7 @@ export default function TabLayout() {
   async function playSound() {
     // console.log('Loading Sound');
     setButtonDisabled(true);
-    setButtonIcon('house.fill'); //update to a icon that indicates loading - TODO
+    setButtonIcon('loading');
     setButtonText('Stream Loading');
 
     await Audio.setAudioModeAsync({
@@ -50,7 +50,7 @@ export default function TabLayout() {
         // console.log('Playing Sound');
         setButtonDisabled(false);
         setAudioPlayingStatus(true);
-        setButtonIcon('paperplane.fill'); // set to pause button - TODO
+        setButtonIcon('pause.circle.fill');
         clearInterval(intervalId); // Stop checking once the condition is met
       }
     }, 100); // Check every 100 ms
@@ -59,7 +59,7 @@ export default function TabLayout() {
     //@ts-ignore
     await sound.pauseAsync();
     setButtonText('Play Live Stream');
-    setButtonIcon('plus.circle.fill'); //set to a play button - TODO
+    setButtonIcon('play.circle.fill');
     setAudioPlayingStatus(false);
 
     // console.log('stopping Playback');
@@ -70,7 +70,7 @@ export default function TabLayout() {
   const [buttonText, setButtonText] = useState<string>('Listen Live');
   const [buttonDisabled, setButtonDisabled] = useState<boolean>(false);
   const [audioPlayingStatus, setAudioPlayingStatus] = useState<boolean>(false);
-  const [buttonIcon, setButtonIcon] = useState<string>('plus.circle.fill'); //set to a play button - TODO
+  const [buttonIcon, setButtonIcon] = useState<string>('play.circle.fill');
 
   const [sound, setSound] = useState<Audio.Sound>();
 
@@ -130,7 +130,7 @@ export default function TabLayout() {
         options={{
           title: 'WETF Schedule',
           tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name='paperplane.fill' color={color} />
+            <IconSymbol size={28} name='calendar' color={color} />
           ),
         }}
       />
