@@ -1,10 +1,10 @@
 import { Tabs } from 'expo-router';
 import React, { useState } from 'react';
-import { Platform } from 'react-native';
+import { Image, Platform, View } from 'react-native';
 import { Audio, InterruptionModeAndroid, InterruptionModeIOS } from 'expo-av';
 
 import { HapticTab } from '@/components/HapticTab';
-import { IconSymbol } from '@/components/ui/IconSymbol';
+import { IconSymbol, IconSymbolName } from '@/components/ui/IconSymbol';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from 'react-native';
@@ -25,6 +25,7 @@ export default function TabLayout() {
   async function playSound() {
     // console.log('Loading Sound');
     setButtonDisabled(true);
+    //@ts-ignore
     setButtonIcon('loading');
     setButtonText('Stream Loading');
 
@@ -70,7 +71,8 @@ export default function TabLayout() {
   const [buttonText, setButtonText] = useState<string>('Listen Live');
   const [buttonDisabled, setButtonDisabled] = useState<boolean>(false);
   const [audioPlayingStatus, setAudioPlayingStatus] = useState<boolean>(false);
-  const [buttonIcon, setButtonIcon] = useState<string>('play.circle.fill');
+  const [buttonIcon, setButtonIcon] =
+    useState<IconSymbolName>('play.circle.fill');
 
   const [sound, setSound] = useState<Audio.Sound>();
 
@@ -83,8 +85,7 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        //@ts-ignore
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].primary,
         headerShown: false,
         tabBarButton: HapticTab,
         tabBarBackground: TabBarBackground,
@@ -101,8 +102,12 @@ export default function TabLayout() {
         name='index'
         options={{
           title: 'Home',
-          tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name='house.fill' color={color} />
+          tabBarIcon: () => (
+            <Image
+              source={require('@/assets/images/WETFLogo.png')}
+              style={{ width: 32, height: 32 }}
+              resizeMode='contain'
+            />
           ),
         }}
       />
@@ -119,9 +124,22 @@ export default function TabLayout() {
         }}
         options={{
           title: `${buttonText}`,
-          tabBarIcon: ({ color }) => (
-            //@ts-ignore
-            <IconSymbol size={28} name={`${buttonIcon}`} color={color} />
+          tabBarIcon: () => (
+            <View
+              style={{
+                transform: [{ translateY: -10 }],
+              }}
+            >
+              <IconSymbol
+                size={60}
+                name={buttonIcon}
+                color={
+                  buttonDisabled
+                    ? Colors[colorScheme ?? 'light'].primary40
+                    : Colors[colorScheme ?? 'light'].primary
+                }
+              />
+            </View>
           ),
         }}
       />
@@ -130,7 +148,11 @@ export default function TabLayout() {
         options={{
           title: 'WETF Schedule',
           tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name='calendar' color={color} />
+            <IconSymbol
+              size={32}
+              name='calendar'
+              color={Colors[colorScheme ?? 'light'].primary}
+            />
           ),
         }}
       />
