@@ -1,21 +1,12 @@
-import {
-  StyleSheet,
-  Image,
-  Platform,
-  Pressable,
-  ScrollView,
-  View,
-} from 'react-native';
+import { StyleSheet, ScrollView, View } from 'react-native';
 
-import { Collapsible } from '@/components/Collapsible';
-import { ExternalLink } from '@/components/ExternalLink';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { IconSymbol } from '@/components/ui/IconSymbol';
 
 import scheduleData from '@/data/schedule.json';
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import { SelectList } from 'react-native-dropdown-select-list';
 import ScheduleShowCard from '@/components/ScheduleShowCard';
 import { useColorScheme } from 'react-native';
