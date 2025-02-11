@@ -1,6 +1,8 @@
 import { Text, StyleSheet, View } from 'react-native';
 import { ThemeContext } from '@/context/ThemeContext';
 import { useContext } from 'react';
+import { ThemedView } from './ThemedView';
+import { ThemedText } from './ThemedText';
 
 // Type definitions
 interface Host {
@@ -35,26 +37,26 @@ export default function ScheduleShowCard(show: ScheduleShowCardProps) {
   const styles = createStyles(theme, colorScheme);
 
   return (
-    <View style={styles.scheduleRow}>
-      <View style={styles.scheduleColumn}>
-        <Text style={[styles.text]}>
+    <ThemedView style={styles.scheduleRow}>
+      <ThemedView style={styles.scheduleColumn}>
+        <ThemedText style={[styles.text]}>
           {show.show.startTime12} - {show.show.endTime12}
-        </Text>
-        <Text style={[styles.text]}>{show.show.show.name}</Text>
-        <Text style={[styles.text, styles.hostNameText]}>
+        </ThemedText>
+        <ThemedText style={[styles.text]}>{show.show.show.name}</ThemedText>
+        <ThemedText style={[styles.text, styles.hostNameText]}>
           {show.show.show.host.map((host: any, i: number) => {
             return i === 0 ? host.fullName : `, ${host.fullName}`;
           })}
-        </Text>
-      </View>
-    </View>
+        </ThemedText>
+      </ThemedView>
+    </ThemedView>
   );
 }
 
 function createStyles(theme: any, colorScheme: string) {
   return StyleSheet.create({
     text: {
-      color: theme.text,
+      // color: theme.text,
     },
     scheduleRow: {
       paddingBottom: 10,
@@ -65,7 +67,7 @@ function createStyles(theme: any, colorScheme: string) {
       width: '100%',
     },
     hostNameText: {
-      color: theme.secondary,
+      // color: theme.secondary,
     },
   });
 }

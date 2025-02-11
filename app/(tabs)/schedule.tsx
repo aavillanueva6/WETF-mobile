@@ -1,4 +1,11 @@
-import { StyleSheet, Image, Platform } from 'react-native';
+import {
+  StyleSheet,
+  Image,
+  Platform,
+  Pressable,
+  ScrollView,
+  View,
+} from 'react-native';
 
 import { Collapsible } from '@/components/Collapsible';
 import { ExternalLink } from '@/components/ExternalLink';
@@ -7,7 +14,101 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { IconSymbol } from '@/components/ui/IconSymbol';
 
+import scheduleData from '@/data/schedule.json';
+import { useContext, useState } from 'react';
+import { SelectList } from 'react-native-dropdown-select-list';
+import ScheduleShowCard from '@/components/ScheduleShowCard';
+import { useColorScheme } from 'react-native';
+import { Colors } from '@/constants/Colors';
+
+// Type definitions
+interface Host {
+  nickName: string;
+  fullName: string;
+  url: string;
+}
+
+interface Show {
+  name: string;
+  url: string;
+  shortDescription: string;
+  host: Host[];
+}
+
+interface ScheduleItem {
+  day: string;
+  show: Show;
+  startTime24: number;
+  startTime12: string;
+  endTime12: string;
+}
+
+const date: Date = new Date();
+const daysOfWeek: string[] = [
+  'Sunday',
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+];
+
+const dropdownData = [
+  { key: 'Sunday', value: 'Sunday' },
+  { key: 'Monday', value: 'Monday' },
+  { key: 'Tuesday', value: 'Tuesday' },
+  { key: 'Wednesday', value: 'Wednesday' },
+  { key: 'Thursday', value: 'Thursday' },
+  { key: 'Friday', value: 'Friday' },
+  { key: 'Saturday', value: 'Saturday' },
+];
+
 export default function Schedule() {
+  const theme = useColorScheme() ?? 'light';
+
+  const [displayDay, setDisplayDay] = useState(`${daysOfWeek[date.getDay()]}`);
+
+  let orderedResults: ScheduleItem[] = [];
+  let pairedResults: ScheduleItem[][] = [];
+  switch (displayDay) {
+    case 'Sunday':
+      orderedResults = scheduleData.Sunday;
+      break;
+    case 'Monday':
+      orderedResults = scheduleData.Monday;
+      break;
+    case 'Tuesday':
+      orderedResults = scheduleData.Tuesday;
+      break;
+    case 'Wednesday':
+      orderedResults = scheduleData.Wednesday;
+      break;
+    case 'Thursday':
+      orderedResults = scheduleData.Thursday;
+      break;
+    case 'Friday':
+      orderedResults = scheduleData.Friday;
+      break;
+    default:
+      orderedResults = scheduleData.Saturday;
+  }
+
+  for (
+    let i = 0, j = Math.floor(orderedResults.length / 2);
+    j < orderedResults.length;
+    i++, j++
+  ) {
+    if (i === Math.floor(orderedResults.length / 2)) {
+      // @ts-ignore
+      pairedResults.push([{}, orderedResults[j]]);
+    } else {
+      pairedResults.push([orderedResults[i], orderedResults[j]]);
+    }
+  }
+  console.log('displayDay: ', displayDay);
+  console.log(pairedResults[0]);
+
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
@@ -23,99 +124,71 @@ export default function Schedule() {
       <ThemedView style={styles.titleContainer}>
         <ThemedText type='title'>WETF On Air Schedule</ThemedText>
       </ThemedView>
-      <ThemedText>
-        This app includes example code to help you get started.
-      </ThemedText>
-      <Collapsible title='File-based routing'>
-        <ThemedText>
-          This app has two screens:{' '}
-          <ThemedText type='defaultSemiBold'>app/(tabs)/index.tsx</ThemedText>{' '}
-          and{' '}
-          <ThemedText type='defaultSemiBold'>app/(tabs)/explore.tsx</ThemedText>
-        </ThemedText>
-        <ThemedText>
-          The layout file in{' '}
-          <ThemedText type='defaultSemiBold'>app/(tabs)/_layout.tsx</ThemedText>{' '}
-          sets up the tab navigator.
-        </ThemedText>
-        <ExternalLink href='https://docs.expo.dev/router/introduction'>
-          <ThemedText type='link'>Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title='Android, iOS, and web support'>
-        <ThemedText>
-          You can open this project on Android, iOS, and the web. To open the
-          web version, press <ThemedText type='defaultSemiBold'>w</ThemedText>{' '}
-          in the terminal running this project.
-        </ThemedText>
-      </Collapsible>
-      <Collapsible title='Images'>
-        <ThemedText>
-          For static images, you can use the{' '}
-          <ThemedText type='defaultSemiBold'>@2x</ThemedText> and{' '}
-          <ThemedText type='defaultSemiBold'>@3x</ThemedText> suffixes to
-          provide files for different screen densities
-        </ThemedText>
-        <Image
-          source={require('@/assets/images/react-logo.png')}
-          style={{ alignSelf: 'center' }}
+      <ThemedView>
+        <SelectList
+          setSelected={setDisplayDay}
+          data={dropdownData}
+          search={false}
+          boxStyles={{ borderRadius: 0 }}
+          inputStyles={{ color: Colors[theme]['primary'], fontWeight: 'bold' }}
+          dropdownTextStyles={{
+            color: Colors[theme]['text'],
+            fontWeight: '600',
+          }}
+          defaultOption={{ key: displayDay, value: displayDay.valueOf() }}
         />
-        <ExternalLink href='https://reactnative.dev/docs/images'>
-          <ThemedText type='link'>Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title='Custom fonts'>
-        <ThemedText>
-          Open <ThemedText type='defaultSemiBold'>app/_layout.tsx</ThemedText>{' '}
-          to see how to load{' '}
-          <ThemedText style={{ fontFamily: 'SpaceMono' }}>
-            custom fonts such as this one.
-          </ThemedText>
-        </ThemedText>
-        <ExternalLink href='https://docs.expo.dev/versions/latest/sdk/font'>
-          <ThemedText type='link'>Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title='Light and dark mode components'>
-        <ThemedText>
-          This template has light and dark mode support. The{' '}
-          <ThemedText type='defaultSemiBold'>useColorScheme()</ThemedText> hook
-          lets you inspect what the user's current color scheme is, and so you
-          can adjust UI colors accordingly.
-        </ThemedText>
-        <ExternalLink href='https://docs.expo.dev/develop/user-interface/color-themes/'>
-          <ThemedText type='link'>Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title='Animations'>
-        <ThemedText>
-          This template includes an example of an animated component. The{' '}
-          <ThemedText type='defaultSemiBold'>
-            components/HelloWave.tsx
-          </ThemedText>{' '}
-          component uses the powerful{' '}
-          <ThemedText type='defaultSemiBold'>
-            react-native-reanimated
-          </ThemedText>{' '}
-          library to create a waving hand animation.
-        </ThemedText>
-        {Platform.select({
-          ios: (
-            <ThemedText>
-              The{' '}
-              <ThemedText type='defaultSemiBold'>
-                components/ParallaxScrollView.tsx
-              </ThemedText>{' '}
-              component provides a parallax effect for the header image.
-            </ThemedText>
-          ),
-        })}
-      </Collapsible>
+      </ThemedView>
+      <ThemedText style={[styles.centeredText, styles.timezoneText]}>
+        All show times listed in Eastern time zone (EST/EDT)
+      </ThemedText>
+      <ScrollView style={styles.container}>
+        <ThemedView>
+          {pairedResults.map((shows, i) => {
+            return (
+              <ThemedView style={styles.scheduleRow} key={i}>
+                <ThemedView style={styles.scheduleColumn}>
+                  {shows[0].show ? (
+                    <ScheduleShowCard show={shows[0]} />
+                  ) : (
+                    <ThemedText></ThemedText>
+                  )}
+                </ThemedView>
+                <View
+                  style={[
+                    styles.verticalLine,
+                    { backgroundColor: Colors[theme]['text'] },
+                  ]}
+                />
+                <ThemedView style={styles.scheduleColumn}>
+                  <ScheduleShowCard show={shows[1]} />
+                </ThemedView>
+              </ThemedView>
+            );
+          })}
+        </ThemedView>
+      </ScrollView>
     </ParallaxScrollView>
   );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    width: '100%',
+    marginTop: -1,
+  },
+  scheduleRow: {
+    flex: 1,
+    flexDirection: 'row',
+    width: '100%',
+    maxWidth: 1024,
+  },
+  scheduleColumn: {
+    width: '50%',
+  },
+  verticalLine: {
+    width: 1,
+  },
   headerImage: {
     color: '#808080',
     bottom: -90,
@@ -125,5 +198,12 @@ const styles = StyleSheet.create({
   titleContainer: {
     flexDirection: 'row',
     gap: 8,
+  },
+  centeredText: {
+    alignSelf: 'center',
+  },
+  timezoneText: {
+    fontStyle: 'italic',
+    marginBottom: 10,
   },
 });
