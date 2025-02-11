@@ -57,6 +57,7 @@ const dropdownData = [
 
 export default function Schedule() {
   const theme = useColorScheme() ?? 'light';
+  const themeColor = Colors[theme];
 
   const [displayDay, setDisplayDay] = useState(`${daysOfWeek[date.getDay()]}`);
 
@@ -118,10 +119,10 @@ export default function Schedule() {
           setSelected={setDisplayDay}
           data={dropdownData}
           search={false}
-          boxStyles={{ borderRadius: 0 }}
-          inputStyles={{ color: Colors[theme]['primary'], fontWeight: 'bold' }}
+          boxStyles={{ borderWidth: 2 }}
+          inputStyles={{ color: themeColor['primary'], fontWeight: 'bold' }}
           dropdownTextStyles={{
-            color: Colors[theme]['text'],
+            color: themeColor['text'],
             fontWeight: '600',
           }}
           defaultOption={{ key: displayDay, value: displayDay.valueOf() }}
@@ -145,7 +146,7 @@ export default function Schedule() {
                 <View
                   style={[
                     styles.verticalLine,
-                    { backgroundColor: Colors[theme]['text'] },
+                    { backgroundColor: themeColor['text'] },
                   ]}
                 />
                 <ThemedView style={styles.scheduleColumn}>
