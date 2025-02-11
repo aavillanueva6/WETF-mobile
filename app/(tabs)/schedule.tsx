@@ -97,8 +97,6 @@ export default function Schedule() {
       pairedResults.push([orderedResults[i], orderedResults[j]]);
     }
   }
-  console.log('displayDay: ', displayDay);
-  console.log(pairedResults[0]);
 
   return (
     <ParallaxScrollView
