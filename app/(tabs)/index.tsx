@@ -12,6 +12,7 @@ import React, { useCallback } from 'react';
 
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import { ExternalLink } from '@/components/ExternalLink';
 
 type OpenURLButtonProps = {
   url: string;
@@ -69,9 +70,9 @@ export default function HomeScreen() {
 
         <ThemedText>
           To learn more about WETF, visit our website:{' '}
-          <OpenURLButton styles={styles} url={wetfURL}>
-            WETF.
-          </OpenURLButton>{' '}
+          <ExternalLink href={wetfURL}>
+            <ThemedText type='link'>WETF.</ThemedText>
+          </ExternalLink>{' '}
           There you can find additional information about our Hosts, Programs,
           Board, and ways to contribute to help keep jazz on the airwaves.
         </ThemedText>
