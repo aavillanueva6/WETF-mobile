@@ -49,8 +49,7 @@ export function Footer() {
 
     const intervalId = setInterval(async () => {
       let audioStatus = await sound.getStatusAsync();
-      //@ts-ignore
-      if (audioStatus.isPlaying) {
+      if ('isPlaying' in audioStatus && audioStatus.isPlaying) {
         setButtonText('Pause Stream');
         setButtonDisabled(false);
         setAudioPlayingStatus(true);
