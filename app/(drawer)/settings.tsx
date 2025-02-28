@@ -8,7 +8,6 @@ import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
 import { ThemeContext } from '@/context/ThemeContext';
 
 export default function Settings() {
-  //@ts-ignore
   const { colorScheme, setColorScheme, theme } = useContext(ThemeContext);
 
   console.log(colorScheme);

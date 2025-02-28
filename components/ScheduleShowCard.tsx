@@ -31,7 +31,6 @@ interface ScheduleShowCardProps {
 }
 
 export default function ScheduleShowCard(show: ScheduleShowCardProps) {
-  //@ts-ignore
   const { colorScheme, theme } = useContext(ThemeContext);
 
   const styles = createStyles(theme, colorScheme);
