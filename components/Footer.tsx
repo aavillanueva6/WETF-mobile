@@ -30,8 +30,7 @@ export function Footer() {
 
   async function playSound() {
     setButtonDisabled(true);
-    //@ts-ignore
-    setButtonIcon('loading');
+    setButtonIcon('play.circle.fill');
     setButtonText('Stream Loading');
 
     await Audio.setAudioModeAsync({
@@ -63,33 +62,35 @@ export function Footer() {
 
   async function stopSound() {
     await sound?.pauseAsync();
-    setButtonText('Play Live Stream');
+    setButtonText('Listen Live');
     setButtonIcon('play.circle.fill');
     setAudioPlayingStatus(false);
   }
 
   const FooterContent = () => (
     <View style={styles.footerContent}>
-      <View style={styles.playButton}>
-        <Pressable
-          onPress={() => {
-            if (!buttonDisabled) {
-              handleActionPress();
-            }
-          }}
-        >
-          <IconSymbol
-            size={60}
-            name={buttonIcon}
-            color={
-              buttonDisabled
-                ? Colors[colorScheme ?? 'light'].primary40
-                : Colors[colorScheme ?? 'light'].primary
-            }
-          />
-          <ThemedText type='defaultSemiBold'>{buttonText}</ThemedText>
-        </Pressable>
-      </View>
+      <Pressable
+        style={styles.playButton}
+        onPress={() => {
+          if (!buttonDisabled) {
+            handleActionPress();
+          }
+        }}
+        disabled={buttonDisabled}
+      >
+        <IconSymbol
+          size={60}
+          name={buttonIcon}
+          color={
+            buttonDisabled
+              ? Colors[colorScheme ?? 'light'].primary40
+              : Colors[colorScheme ?? 'light'].primary
+          }
+        />
+        <ThemedText type='defaultSemiBold' style={styles.buttonText}>
+          {buttonText}
+        </ThemedText>
+      </Pressable>
     </View>
   );
 
@@ -123,5 +124,10 @@ const styles = StyleSheet.create({
   },
   playButton: {
     alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonText: {
+    textAlign: 'center',
+    marginTop: 4,
   },
 });
