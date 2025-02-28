@@ -17,6 +17,7 @@ const MAPPING = {
   'play.circle.fill': 'play-circle', // For audio play
   'pause.circle.fill': 'pause-circle', // For audio pause
   loading: 'sync', // For loading state (spinning icon)
+  gear: 'settings', // For settings page
 } as Partial<
   Record<
     import('expo-symbols').SymbolViewProps['name'],
