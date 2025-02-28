@@ -15,7 +15,7 @@ export default function DrawerLayout() {
       }}
     >
       <Drawer.Screen
-        name='home'
+        name='index'
         options={{
           drawerLabel: 'Home',
           title: 'WETF Radio',
@@ -34,6 +34,15 @@ export default function DrawerLayout() {
           title: 'Schedule',
           drawerIcon: ({ color }) => (
             <IconSymbol size={24} name='calendar' color={color} />
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name='settings'
+        options={{
+          title: 'Settings',
+          drawerIcon: ({ color }) => (
+            <IconSymbol size={24} name='gear' color={color} />
           ),
         }}
       />
