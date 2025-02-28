@@ -1,45 +1,13 @@
-import {
-  Image,
-  StyleSheet,
-  Linking,
-  Alert,
-  Pressable,
-  Text,
-} from 'react-native';
+import { Image, StyleSheet } from 'react-native';
 
 import ParallaxScrollView from '@/components/ParallaxScrollView';
-import React, { useCallback } from 'react';
+import React from 'react';
 
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { ExternalLink } from '@/components/ExternalLink';
 
-type OpenURLButtonProps = {
-  url: string;
-  children: string;
-  styles: any;
-};
-
 const wetfURL = 'https://react-radio.onrender.com/';
-
-const OpenURLButton = ({ url, children, styles }: OpenURLButtonProps) => {
-  const handlePress = useCallback(async () => {
-    // Checking if the link is supported for links with custom URL scheme.
-    const supported = await Linking.canOpenURL(url);
-
-    if (supported) {
-      await Linking.openURL(url);
-    } else {
-      Alert.alert(`Don't know how to open this URL: ${url}`);
-    }
-  }, [url]);
-
-  return (
-    <Pressable onPress={handlePress}>
-      <ThemedText type='defaultSemiBold'>{children}</ThemedText>
-    </Pressable>
-  );
-};
 
 export default function HomeScreen() {
   return (
