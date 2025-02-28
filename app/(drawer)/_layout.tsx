@@ -3,8 +3,11 @@ import { useColorScheme } from 'react-native';
 import { Colors } from '@/constants/Colors';
 import { IconSymbol } from '@/components/ui/IconSymbol';
 import { Image } from 'react-native';
+import { useContext } from 'react';
+import { ThemeContext } from '@/context/ThemeContext';
 
 export default function DrawerLayout() {
+  const { theme } = useContext(ThemeContext);
   const colorScheme = useColorScheme();
 
   return (
@@ -12,6 +15,16 @@ export default function DrawerLayout() {
       screenOptions={{
         headerTintColor: Colors[colorScheme ?? 'light'].primary,
         drawerActiveTintColor: Colors[colorScheme ?? 'light'].primary,
+        headerStyle: {
+          backgroundColor: theme.background,
+        },
+        drawerStyle: {
+          backgroundColor: theme.background,
+        },
+        drawerContentStyle: {
+          backgroundColor: theme.background,
+        },
+        drawerInactiveTintColor: theme.text,
       }}
     >
       <Drawer.Screen
