@@ -2,10 +2,22 @@ import { createContext, useState } from 'react';
 import { Appearance } from 'react-native';
 import { Colors } from '@/constants/Colors';
 
-export const ThemeContext = createContext({});
+interface ThemeContextType {
+  colorScheme: string;
+  setColorScheme: (scheme: 'light' | 'dark') => void;
+  theme: typeof Colors.light | typeof Colors.dark;
+}
 
-export const ThemeProvider = ({ children }: { children: any }) => {
-  const [colorScheme, setColorScheme] = useState(Appearance.getColorScheme());
+export const ThemeContext = createContext<ThemeContextType>({
+  colorScheme: 'light',
+  setColorScheme: () => {},
+  theme: Colors.light,
+});
+
+export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
+  const [colorScheme, setColorScheme] = useState(
+    Appearance.getColorScheme() || 'light'
+  );
   const theme = colorScheme === 'dark' ? Colors.dark : Colors.light;
 
   return (
